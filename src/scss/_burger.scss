@@ -1,0 +1,47 @@
+input {
+  display: none;
+}
+
+.label {
+  padding: 25px;
+}
+label {
+  width: 2em;
+  height: 0.25em;
+  background-color: #fff;
+  position: absolute;
+  display: flex;
+  right: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 2em;
+    height: 0.25em;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+label::before {
+  transform: translateY(-250%);
+}
+label::after {
+  transform: translateY(250%);
+}
+
+#toggle:checked ~ ::before {
+  transform: rotate(45deg);
+}
+#toggle:checked ~ ::after {
+  transform: rotate(-45deg);
+}
+
+#toggle:checked ~ label {
+  background-color: transparent;
+}

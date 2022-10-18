@@ -13,28 +13,34 @@
   </head>
   <body>
     <nav>
-      <input type="checkbox" id="toggle" />
-      <label for="toggle"></label>
+      <div class="label">
+        <input type="checkbox" id="toggle" />
+        <label for="toggle"></label>
+      </div>
       <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link" href="">Hem</a>
-          <a class="nav-link" href="">Kontakt</a>
-          <a class="nav-link" href="">Om</a>
-        </li>
+        <li><a class="nav-link" href="">Hem</a></li>
+        <li><a class="nav-link" href="#About">Om</a></li>
+        <li><a class="nav-link" href="#Contact">Kontakt</a></li>
       </ul>
     </nav>
 
     <main>
-      <h2>Welcome to nature</h2>
-      <h5>A journey through time and <br />sheep</h5>
-      <h5>Too see how... cotton... is <br />mage, made I mean</h5>
+      <div class="welcometext">
+        <h2 class="text">Welcome to nature</h2>
+        <h5 class="text">A journey through time and <br />sheep</h5>
+        <h5 class="text">
+          Too see how... cotton... is <br />mage, made I mean
+        </h5>
+      </div>
 
-      <a href="#About">
-        <span class="fa-sharp fa-solid fa-circle-down"></span>
-      </a>
+      <div class="firstarrow">
+        <a href="#About">
+          <span class="fa-sharp fa-solid fa-circle-down"></span>
+        </a>
+      </div>
     </main>
 
-    <aside class="About" id="members">
+    <aside class="About" id="About">
       <h1>Träffa laget</h1>
       <div>
         <img class="rakib" src="../src/scss/img/Rakib_Square.png" alt="" />
@@ -64,6 +70,28 @@
           som har stor erfarenhet av ganska många saker
         </div>
       </div>
+
+      <div class="secondarrow">
+        <a href="#Contact">
+          <span class="fa-sharp fa-solid fa-circle-down"></span>
+        </a>
+      </div>
     </aside>
+
+    <footer id="Contact">
+      <address>
+        Tegel Consulting AB <br />Agatvägen 18<br />
+        168 60 Bromma
+      </address>
+      <a href="mailto:info@tegelconsulting.se">info@tegelconsulting.se</a>
+      <p><a href="tel:070-123 456 78">070-123 456 78</a></p>
+      <a href="#">
+        <i class="fa-brands fa-instagram"></i><span>Instagram</span>
+      </a>
+      <a href="#"> <i class="fa-brands fa-twitter"></i><span>Twitter</span> </a>
+      <a href="#">
+        <i class="fa-brands fa-facebook"></i><span>Facebook</span>
+      </a>
+    </footer>
   </body>
 </html>
